@@ -189,7 +189,7 @@ python inference.py
 
 ## HuggingFace Space
 
-Deployed at: https://huggingface.co/spaces/YOUR_USERNAME/privacy-auditor-env
+Deployed at: https://huggingface.co/spaces/ghosthets/privacy-auditor-env
 
 ## Architecture Highlights
 
