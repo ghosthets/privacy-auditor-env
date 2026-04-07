@@ -1,0 +1,29 @@
+name: privacy-auditor-env
+version: "1.0.0"
+description: >
+  RL environment for training agents to audit software systems for GDPR,
+  India's DPDP Act, and CCPA privacy violations. Agents scan codebases,
+  trace data flows, and generate compliance gap reports.
+author: gourav-chouhan
+tags: [openenv, privacy, compliance, gdpr, dpdp, cybersecurity]
+tasks:
+  - id: pii_detection
+    name: "PII Leakage Detection"
+    difficulty: easy
+    max_steps: 15
+    reward_range: [0.0, 1.0]
+  - id: data_flow_mapping
+    name: "Data Flow Mapping"
+    difficulty: medium
+    max_steps: 25
+    reward_range: [0.0, 1.0]
+  - id: compliance_gap_report
+    name: "Compliance Gap Report"
+    difficulty: hard
+    max_steps: 40
+    reward_range: [0.0, 1.0]
+server:
+  port: 7860
+  host: "0.0.0.0"
+  max_concurrent_envs: 32
+spec_version: "0.1"
